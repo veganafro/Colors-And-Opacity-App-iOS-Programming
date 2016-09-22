@@ -1,0 +1,1 @@
+This is a small application that changes the color and opacity of the welcome message
