@@ -36,7 +36,7 @@
         self.colorName.textColor = [UIColor cyanColor];
     }
     else if ([myColor isEqualToString:@"Green"]) {
-        self.colorName.text = [self.colorArray objectAtIndex:3];
+        self.colorName.text = [self.colorArray objectAtIndex:2];
         self.colorName.backgroundColor = [UIColor greenColor];
         self.colorName.textColor = [UIColor redColor];
     }
@@ -47,6 +47,7 @@
     }
     
 } // end colorChosen
+
 
 - (IBAction)sliderMoved:(id)sender {
     UISlider * mySlider = (UISlider *) sender;
@@ -61,6 +62,7 @@
 
 } // end sliderMoved
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -69,12 +71,13 @@
     
     self.colorName.text = [myColorArray objectAtIndex:0];
     self.colorArray = myColorArray;
-}
+} // end viewDidLoad
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end

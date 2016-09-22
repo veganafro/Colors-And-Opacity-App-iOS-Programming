@@ -88,7 +88,6 @@
                         <outlet property="alphaSlider" destination="TIh-cc-9PZ" id="iDS-2O-5h7"/>
                         <outlet property="colorName" destination="jJR-zT-C1o" id="eAN-TF-K4B"/>
                         <outlet property="sliderPos" destination="Qvp-ed-SL4" id="jKQ-Qa-TRc"/>
-                        <outletCollection property="colorName" destination="YkV-6k-naN" id="MOC-Ry-aIn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
