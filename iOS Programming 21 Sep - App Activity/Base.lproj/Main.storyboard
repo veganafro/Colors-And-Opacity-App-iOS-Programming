@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -20,27 +20,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YkV-6k-naN">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Red">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="colorChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GBq-N1-f2Q"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ad5-h8-uuk">
-                                <state key="normal" title="Green">
-                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="colorChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e1c-j4-DiM"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISm-WS-D7E">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="Eaz-1p-OAj"/>
                                 </constraints>
                                 <state key="normal" title="Blue">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="colorChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mms-dt-g2S"/>
@@ -67,10 +61,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ad5-h8-uuk">
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Green">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="colorChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e1c-j4-DiM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ad5-h8-uuk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0PS-6W-L6x"/>
+                            <constraint firstItem="ad5-h8-uuk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-2" id="0PS-6W-L6x"/>
                             <constraint firstAttribute="leadingMargin" secondItem="YkV-6k-naN" secondAttribute="leading" id="EZQ-9i-X0n"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ISm-WS-D7E" secondAttribute="trailing" id="TkS-7H-8hu"/>
                             <constraint firstAttribute="bottom" secondItem="TIh-cc-9PZ" secondAttribute="bottom" constant="188" id="d3R-9q-7Qs"/>
@@ -81,7 +84,7 @@
                             <constraint firstItem="YkV-6k-naN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sTg-4B-NR5"/>
                             <constraint firstItem="jJR-zT-C1o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="shf-fg-Ucp"/>
                             <constraint firstItem="ad5-h8-uuk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xhL-8p-9QW"/>
-                            <constraint firstItem="TIh-cc-9PZ" firstAttribute="centerX" secondItem="ad5-h8-uuk" secondAttribute="centerX" id="zLn-G0-UIM"/>
+                            <constraint firstItem="TIh-cc-9PZ" firstAttribute="centerX" secondItem="ad5-h8-uuk" secondAttribute="centerX" constant="2" id="zLn-G0-UIM"/>
                         </constraints>
                     </view>
                     <connections>

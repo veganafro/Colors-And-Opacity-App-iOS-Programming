@@ -71,6 +71,7 @@
     
     self.colorName.text = [myColorArray objectAtIndex:0];
     self.colorArray = myColorArray;
+    [self.sliderPos setValue:255];
 } // end viewDidLoad
 
 
